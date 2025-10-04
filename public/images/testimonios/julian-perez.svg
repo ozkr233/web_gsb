@@ -1,0 +1,11 @@
+<svg width=\"800\" height=\"600\" viewBox=\"0 0 800 600\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-labelledby=\"title desc\">
+  <title id=\"title\">Retrato de Juli&#225;n P&#233;rez</title>
+  <desc id=\"desc\">Padre de un estudiante de grado sexto.</desc>
+  <rect width=\"800\" height=\"600\" rx=\"48\" fill=\"#F5F5F5\" />
+  <rect x=\"32\" y=\"32\" width=\"736\" height=\"536\" rx=\"40\" fill=\"#0047AB\" opacity=\"0.9\" />
+  <circle cx=\"650\" cy=\"140\" r=\"90\" fill=\"#FFD700\" opacity=\"0.25\" />
+  <circle cx=\"180\" cy=\"470\" r=\"110\" fill=\"#FFD700\" opacity=\"0.22\" />
+  <circle cx=\"600\" cy=\"460\" r=\"100\" fill=\"#DC143C\" opacity=\"0.18\" />
+  <text x=\"64\" y=\"180\" font-family=\"'Poppins','Segoe UI',sans-serif\" font-size=\"72\" font-weight=\"700\" fill=\"#FFFFFF\">Juli&#225;n</text>
+  <text x=\"64\" y=\"250\" font-family=\"'Manrope','Segoe UI',sans-serif\" font-size=\"28\" fill=\"#FFFFFF\" opacity=\"0.85\">Gimnasio Sim&#243;n Bol&#237;var</text>
+</svg>

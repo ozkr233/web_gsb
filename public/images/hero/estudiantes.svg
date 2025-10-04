@@ -1,0 +1,31 @@
+<svg width="960" height="720" viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Estudiantes felices en el Gimnasio Sim&#243;n Bol&#237;var</title>
+  <desc id="desc">Ilustraci&#243;n abstracta de estudiantes sonrientes con uniforme azul y amarillo.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0047AB" />
+      <stop offset="100%" stop-color="#002F73" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="url(#bg)" rx="42" />
+  <circle cx="760" cy="160" r="120" fill="#FFD700" opacity="0.35" />
+  <circle cx="120" cy="540" r="140" fill="#FFD700" opacity="0.18" />
+  <circle cx="820" cy="540" r="160" fill="#DC143C" opacity="0.25" />
+  <g transform="translate(200 260)">
+    <path d="M120 240c-36 0-66-30-66-66s30-66 66-66 66 30 66 66-30 66-66 66z" fill="#FFD700" opacity="0.9" />
+    <path d="M120 154c-16 0-30-14-30-30s14-30 30-30 30 14 30 30-14 30-30 30z" fill="#FFF" opacity="0.9" />
+    <path d="M72 282c12-52 60-82 101-82s90 30 101 82H72z" fill="#FFFFFF" opacity="0.92" />
+  </g>
+  <g transform="translate(420 210)">
+    <path d="M120 240c-36 0-66-30-66-66s30-66 66-66 66 30 66 66-30 66-66 66z" fill="#FFD700" opacity="0.9" />
+    <path d="M120 154c-16 0-30-14-30-30s14-30 30-30 30 14 30 30-14 30-30 30z" fill="#FFF" opacity="0.95" />
+    <path d="M72 290c10-66 52-96 101-96s88 30 100 96H72z" fill="#0047AB" opacity="0.9" />
+  </g>
+  <g transform="translate(620 280)">
+    <path d="M100 200c-30 0-54-24-54-54s24-54 54-54 54 24 54 54-24 54-54 54z" fill="#FFD700" opacity="0.88" />
+    <path d="M100 130c-14 0-26-12-26-26s12-26 26-26 26 12 26 26-12 26-26 26z" fill="#FFF" opacity="0.9" />
+    <path d="M60 232c9-40 44-64 80-64s73 24 80 64H60z" fill="#FFFFFF" opacity="0.85" />
+  </g>
+  <text x="64" y="140" font-family="'Poppins', 'Segoe UI', sans-serif" font-size="48" fill="#FFFFFF" font-weight="600">Gimnasio Sim&#243;n Bol&#237;var</text>
+  <text x="64" y="200" font-family="'Manrope', 'Segoe UI', sans-serif" font-size="28" fill="#FFD700" font-weight="500">Educaci&#243;n biling&#252;e con valores cristianos</text>
+</svg>

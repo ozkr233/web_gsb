@@ -1,0 +1,12 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Valores cristianos en acci&#243;n</title>
+  <desc id="desc">Ilustraci&#243;n abstracta de estudiantes con Biblia y coraz&#243;n.</desc>
+  <rect width="640" height="480" rx="48" fill="#FFFFFF" />
+  <rect x="40" y="40" width="560" height="400" rx="40" fill="#0047AB" opacity="0.92" />
+  <path d="M320 132c-68 0-124 52-124 116 0 60 52 110 116 116l8-0.2c64-4.5 116-56 116-116 0-64-56-116-116-116z" fill="#FFD700" opacity="0.75" />
+  <path d="M320 170c-46 0-84 32-84 78 0 42 32 76 76 78l8-0.3c44-3 80-36 80-78 0-46-36-78-80-78z" fill="#FFFFFF" opacity="0.9" />
+  <path d="M316 216h8v72h-8z" fill="#0047AB" />
+  <path d="M292 248h64v8h-64z" fill="#0047AB" />
+  <path d="M360 256c0 22-18 40-40 40s-40-18-40-40 18-40 40-40 40 18 40 40z" fill="#DC143C" opacity="0.85" />
+  <text x="60" y="420" font-family="'Poppins','Segoe UI',sans-serif" font-size="40" font-weight="700" fill="#FFFFFF">Valores Cristianos</text>
+</svg>

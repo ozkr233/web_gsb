@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "pregunta": "¿Desde qué grado reciben estudiantes?",
+    "respuesta": "Contamos con admisiones abiertas desde prejardín hasta grado once. La disponibilidad de cupos se confirma durante el proceso."
+  },
+  {
+    "id": 2,
+    "pregunta": "¿El proceso de admisión tiene costo?",
+    "respuesta": "Sí, se realiza un pago administrativo para agendar la entrevista familiar y las pruebas diagnósticas."
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Qué nivel de inglés se requiere para ingresar?",
+    "respuesta": "Realizamos una valoración de inglés para ubicar al estudiante con el acompañamiento necesario. No es requisito hablar inglés para ingresar a sexto grado."
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Ofrecen rutas escolares?",
+    "respuesta": "Sí, contamos con aliados de transporte certificado con rutas personalizadas por zonas de la ciudad."
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué convenios internacionales tienen?",
+    "respuesta": "Somos centro preparador Cambridge y miembros de ACSI. Además, participamos en intercambios académicos con colegios en Canadá y Estados Unidos."
+  }
+]

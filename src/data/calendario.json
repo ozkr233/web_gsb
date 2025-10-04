@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "fecha": "2025-01-20",
+    "titulo": "Inicio de clases",
+    "descripcion": "Bienvenida institucional, encuentro de grupos y jornada de oraci\u00f3n."
+  },
+  {
+    "id": 2,
+    "fecha": "2025-02-10",
+    "titulo": "Aplicaci\u00f3n pruebas diagn\u00f3sticas",
+    "descripcion": "Evaluaciones acad\u00e9micas y de ingl\u00e9s para estudiantes nuevos."
+  },
+  {
+    "id": 3,
+    "fecha": "2025-03-22",
+    "titulo": "Open House Biling\u00fce",
+    "descripcion": "Recorrido por aulas, talleres demostrativos y charla con directivas."
+  },
+  {
+    "id": 4,
+    "fecha": "2025-04-05",
+    "titulo": "Cierre de inscripciones",
+    "descripcion": "Entrega de resultados y formalizaci\u00f3n de matr\u00edculas."
+  }
+]

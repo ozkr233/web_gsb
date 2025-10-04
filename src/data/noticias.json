@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "titulo": "Semana de la Ciencia y la Innovación",
+    "slug": "semana-ciencia-innovacion",
+    "fecha": "2025-03-08",
+    "categoria": "Academia",
+    "imagen": "/images/noticias/semana-ciencia.jpg",
+    "descripcion": "Estudiantes de bachillerato presentaron proyectos STEAM en inglés y español.",
+    "contenido": "Más de 60 proyectos interdisciplinares demostraron el compromiso del colegio con la ciencia aplicada. Las familias participaron en talleres guiados por docentes y expertos invitados."
+  },
+  {
+    "id": 2,
+    "titulo": "Primer Puesto en Cambridge English Exams",
+    "slug": "primer-puesto-cambridge",
+    "fecha": "2025-02-14",
+    "categoria": "Bilingüismo",
+    "imagen": "/images/noticias/certificacion-cambridge.jpg",
+    "descripcion": "Nuestros estudiantes representaron al colegio con puntajes sobresalientes en las pruebas internacionales.",
+    "contenido": "El 92% del curso obtuvo calificación A o B en los Cambridge English Qualifications. Felicitamos a las familias y docentes por el acompañamiento en este logro colectivo."
+  },
+  {
+    "id": 3,
+    "titulo": "Encuentro de Familias y Valores",
+    "slug": "encuentro-familias-valores",
+    "fecha": "2025-01-26",
+    "categoria": "Pastoral",
+    "imagen": "/images/noticias/encuentro-familias.jpg",
+    "descripcion": "Más de 300 familias participaron en la jornada de espiritualidad y convivencia.",
+    "contenido": "El encuentro incluyó alabanzas bilingües, charlas inspiradoras y actividades de servicio. Renovamos nuestro compromiso de formar corazones al servicio de la comunidad."
+  },
+  {
+    "id": 4,
+    "titulo": "Inauguración del Centro de Artes y Música",
+    "slug": "centro-artes-musica",
+    "fecha": "2024-11-30",
+    "categoria": "Vida Escolar",
+    "imagen": "/images/noticias/centro-artes.jpg",
+    "descripcion": "Cortamos la cinta del nuevo espacio creativo con estudios de música, danza y artes plásticas.",
+    "contenido": "El centro cuenta con salas insonorizadas, laboratorio multimedia y espacios colaborativos que potencian el talento artístico en dos idiomas."
+  }
+]

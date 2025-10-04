@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-neutral-white text-neutral-dark font-sans antialiased;
+}
+
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:z-50 focus:left-4 focus:top-4 focus:rounded-full focus:bg-primary-blue focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-neutral-white;
+}
+
+.section-padding {
+  @apply py-16 md:py-20;
+}
+
+.section-heading {
+  @apply font-heading text-3xl md:text-4xl font-semibold text-neutral-dark tracking-tight;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-primary-yellow/20 text-primary-blue text-sm font-semibold px-4 py-2;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply !h-10 !w-10 !rounded-full !bg-primary-blue !text-neutral-white !shadow-lg;
+}
+
+.swiper-pagination-bullet {
+  @apply !bg-primary-blue/30 !opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-primary-blue;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full bg-primary-blue px-6 py-3 text-sm font-semibold uppercase tracking-wide text-neutral-white transition hover:bg-primary-blue/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-yellow;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-primary-blue px-6 py-3 text-sm font-semibold uppercase tracking-wide text-primary-blue transition hover:bg-primary-blue/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-yellow;
+}
+
+.hero-blob {
+  background: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.45), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(220, 20, 60, 0.35), transparent 55%);
+}
+
+.values-decor {
+  background: radial-gradient(circle at 10% 10%, rgba(255, 215, 0, 0.2), transparent 55%),
+    radial-gradient(circle at 90% 20%, rgba(220, 20, 60, 0.15), transparent 60%);
+}
+
+.testimonial-card {
+  @apply rounded-3xl bg-neutral-white p-8 shadow-card;
+}
+
+.news-card {
+  @apply overflow-hidden rounded-3xl bg-neutral-white shadow-card transition hover:-translate-y-2 hover:shadow-2xl;
+}
+
+.gallery-grid {
+  @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.timeline::before {
+  @apply absolute left-4 top-0 h-full w-1 rounded-full bg-primary-blue/20 content-[''];
+}
+
+.timeline-item::before {
+  @apply absolute -left-[3.35rem] top-3 flex h-6 w-6 items-center justify-center rounded-full border-2 border-primary-blue bg-neutral-white text-xs font-bold text-primary-blue content-[attr(data-year)];
+}
+
+@layer base {
+  ::selection {
+    @apply bg-primary-yellow text-neutral-dark;
+  }
+}
+
+@layer components {
+  .card-underline {
+    @apply relative pb-6;
+  }
+  .card-underline::after {
+    @apply absolute bottom-0 left-0 h-1 w-16 rounded-full bg-primary-yellow content-[''];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

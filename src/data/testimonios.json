@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nombre": "María Fernanda Rojas",
+    "rol": "Madre de bachillerato",
+    "imagen": "/images/testimonios/maria-rojas.jpg",
+    "mensaje": "Elegimos el colegio por su enfoque cristiano y bilingüe. Hoy vemos a nuestra hija segura, feliz y con un nivel de inglés sorprendente.",
+    "calificacion": 5
+  },
+  {
+    "id": 2,
+    "nombre": "Pastor Luis Herrera",
+    "rol": "Padre de bachillerato",
+    "imagen": "/images/testimonios/luis-herrera.jpg",
+    "mensaje": "La formación espiritual es auténtica y práctica. Los estudiantes viven los valores a diario y sirven a la comunidad.",
+    "calificacion": 5
+  },
+  {
+    "id": 3,
+    "nombre": "Carolina Medina",
+    "rol": "Exalumna 2018",
+    "imagen": "/images/testimonios/carolina-medina.jpg",
+    "mensaje": "Gracias al programa bilingüe ingresé a una universidad internacional. Destaco el acompañamiento docente y la disciplina académica.",
+    "calificacion": 4.5
+  },
+  {
+    "id": 4,
+    "nombre": "Julián Pérez",
+    "rol": "Padre de grado sexto",
+    "imagen": "/images/testimonios/julian-perez.jpg",
+    "mensaje": "Mi hijo inicia su vida escolar en un ambiente amoroso y seguro. Ya canta y ora en inglés y español.",
+    "calificacion": 5
+  }
+]

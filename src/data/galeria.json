@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "titulo": "Laboratorio STEAM",
+    "categoria": "Infraestructura",
+    "imagen": "/images/galeria/laboratorio-steam.jpg",
+    "descripcion": "Laboratorio equipado para experimentos de ciencia y rob\u00f3tica."
+  },
+  {
+    "id": 2,
+    "titulo": "Chapel Morning",
+    "categoria": "Eventos",
+    "imagen": "/images/galeria/chapel-morning.jpg",
+    "descripcion": "Jornada de oraci\u00f3n y alabanza con toda la comunidad educativa."
+  },
+  {
+    "id": 3,
+    "titulo": "Festival de Teatro Biling\u00fce",
+    "categoria": "Arte y cultura",
+    "imagen": "/images/galeria/festival-teatro.jpg",
+    "descripcion": "Obras originales presentadas por estudiantes de secundaria en ingl\u00e9s."
+  },
+  {
+    "id": 4,
+    "titulo": "Campeones de Atletismo",
+    "categoria": "Deportes",
+    "imagen": "/images/galeria/campeones-atletismo.jpg",
+    "descripcion": "Delegaci\u00f3n deportiva celebrando en el estadio municipal."
+  },
+  {
+    "id": 5,
+    "titulo": "Mural de Valores",
+    "categoria": "Arte y cultura",
+    "imagen": "/images/galeria/mural-valores.jpg",
+    "descripcion": "Estudiantes ilustran los valores institucionales en gran formato."
+  },
+  {
+    "id": 6,
+    "titulo": "Clase de M\u00fasica",
+    "categoria": "Vida estudiantil",
+    "imagen": "/images/galeria/clase-musica.jpg",
+    "descripcion": "Pr\u00e1ctica instrumental guiada por docentes expertos."
+  },
+  {
+    "id": 7,
+    "titulo": "Graduaci\u00f3n 2024",
+    "categoria": "Eventos",
+    "imagen": "/images/galeria/graduacion-2024.jpg",
+    "descripcion": "Ceremonia de reconocimiento a los bachilleres internacionales."
+  },
+  {
+    "id": 8,
+    "titulo": "Biblioteca Biling\u00fce",
+    "categoria": "Infraestructura",
+    "imagen": "/images/galeria/biblioteca-bilingue.jpg",
+    "descripcion": "Espacio de lectura con selecci\u00f3n de literatura en ingl\u00e9s y espa\u00f1ol."
+  },
+  {
+    "id": 9,
+    "titulo": "Club de Debate",
+    "categoria": "Vida estudiantil",
+    "imagen": "/images/galeria/club-debate.jpg",
+    "descripcion": "Equipo representativo en competencias nacionales en ambos idiomas."
+  },
+  {
+    "id": 10,
+    "titulo": "Taller Maker",
+    "categoria": "Infraestructura",
+    "imagen": "/images/galeria/taller-maker.jpg",
+    "descripcion": "Espacio creativo con impresoras 3D y cortadora l\u00e1ser."
+  }
+]

@@ -1,0 +1,19 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Gimnasio Sim&#243;n Bol&#237;var</title>
+  <desc id="desc">Imagen abierta para redes sociales del colegio biling&#252;e.</desc>
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0047AB" />
+      <stop offset="100%" stop-color="#0E2C63" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#og)" rx="36" />
+  <circle cx="980" cy="160" r="140" fill="#FFD700" opacity="0.25" />
+  <circle cx="200" cy="520" r="180" fill="#FFD700" opacity="0.15" />
+  <circle cx="900" cy="500" r="160" fill="#DC143C" opacity="0.22" />
+  <text x="140" y="220" font-family="'Poppins','Segoe UI',sans-serif" font-size="88" font-weight="700" fill="#FFFFFF">Gimnasio</text>
+  <text x="140" y="320" font-family="'Poppins','Segoe UI',sans-serif" font-size="110" font-weight="700" fill="#FFD700">Sim&#243;n Bol&#237;var</text>
+  <text x="140" y="410" font-family="'Manrope','Segoe UI',sans-serif" font-size="36" fill="#FFFFFF" opacity="0.85">Educaci&#243;n biling&#252;e con valores cristianos</text>
+  <rect x="140" y="450" width="380" height="70" rx="35" fill="#FFD700" />
+  <text x="180" y="500" font-family="'Manrope','Segoe UI',sans-serif" font-size="30" font-weight="600" fill="#0047AB">Excelencia acad&#233;mica &#183; Fe &#183; Prop&#243;sito</text>
+</svg>

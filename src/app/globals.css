@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  @apply bg-neutral-white text-neutral-dark font-sans antialiased;
+  @apply bg-neutral-light text-neutral-dark font-sans antialiased;
 }
 
 .skip-link {
@@ -27,7 +27,7 @@ body {
 }
 
 .badge {
-  @apply inline-flex items-center gap-2 rounded-full bg-primary-yellow/20 text-primary-blue text-sm font-semibold px-4 py-2;
+  @apply inline-flex items-center gap-2 rounded-full bg-primary-yellow text-primary-blue ring-1 ring-white/30 shadow-sm text-sm font-semibold px-4 py-2;
 }
 
 .swiper-button-next,
@@ -52,13 +52,13 @@ body {
 }
 
 .hero-blob {
-  background: radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.45), transparent 60%),
-    radial-gradient(circle at 80% 30%, rgba(220, 20, 60, 0.35), transparent 55%);
+  background: radial-gradient(circle at 20% 20%, rgba(244, 208, 63, 0.45), transparent 60%),
+    radial-gradient(circle at 80% 30%, rgba(200, 16, 46, 0.35), transparent 55%);
 }
 
 .values-decor {
-  background: radial-gradient(circle at 10% 10%, rgba(255, 215, 0, 0.2), transparent 55%),
-    radial-gradient(circle at 90% 20%, rgba(220, 20, 60, 0.15), transparent 60%);
+  background: radial-gradient(circle at 10% 10%, rgba(244, 208, 63, 0.2), transparent 55%),
+    radial-gradient(circle at 90% 20%, rgba(200, 16, 46, 0.15), transparent 60%);
 }
 
 .testimonial-card {

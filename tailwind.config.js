@@ -8,12 +8,13 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          blue: '#0047AB',
-          yellow: '#FFD700',
-          red: '#DC143C',
+          blue: '#003366', // Navy Blue
+          yellow: '#F4D03F', // Warm Gold
+          red: '#C8102E', // Deep Red
         },
         neutral: {
           white: '#FFFFFF',
+          light: '#FDFBF7', // Cream/Off-white
           gray: '#F5F5F5',
           dark: '#1a1a1a',
         },
@@ -23,11 +24,11 @@ module.exports = {
         heading: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        card: '0 20px 60px rgba(0, 71, 171, 0.08)',
+        card: '0 20px 60px rgba(0, 51, 102, 0.08)',
       },
       backgroundImage: {
-        'hero-pattern': "linear-gradient(135deg, rgba(0,71,171,0.95) 0%, rgba(0,71,171,0.85) 100%)",
-        'values-pattern': 'radial-gradient(circle at top right, rgba(255,215,0,0.25), transparent 55%)',
+        'hero-pattern': "linear-gradient(135deg, rgba(0, 51, 102, 0.95) 0%, rgba(0, 51, 102, 0.85) 100%)",
+        'values-pattern': 'radial-gradient(circle at top right, rgba(244, 208, 63, 0.25), transparent 55%)',
       },
     },
   },

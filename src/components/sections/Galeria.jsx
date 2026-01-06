@@ -21,38 +21,12 @@ function GaleriaHome({ items = [], limit = 6 }) {
             src="https://www.instagram.com/gimnasiosimonbolivar/embed"
             title="Instagram Gimnasio Simón Bolívar"
             className="h-[600px] w-full"
-            allowTransparency
+            allowtransparency="true"
             frameBorder="0"
             scrolling="no"
             loading="lazy"
           />
         </div>
-
-        {fallbackItems.length ? (
-          <div className="mt-12">
-            <h3 className="mb-6 text-lg font-semibold text-primary-blue">Galería institucional</h3>
-            <div className="gallery-grid">
-              {fallbackItems.map((item) => (
-                <div key={item.id} className="overflow-hidden rounded-3xl border border-primary-blue/10 bg-neutral-gray shadow-card">
-                  <div className="relative h-56 w-full">
-                    <Image
-                      src={item.imagen}
-                      alt={item.titulo}
-                      fill
-                      sizes="(min-width:1024px) 30vw, 100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="flex flex-col gap-2 p-5">
-                    <span className="text-xs font-semibold uppercase tracking-[0.2em] text-primary-blue/70">{item.categoria}</span>
-                    <h4 className="font-heading text-lg font-semibold text-neutral-dark">{item.titulo}</h4>
-                    <p className="text-sm text-neutral-dark/70">{item.descripcion}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : null}
       </div>
     </section>
   );

@@ -9,7 +9,9 @@ const baseStyles = 'inline-flex items-center justify-center gap-2 rounded-full p
 const variants = {
   primary: 'bg-primary-blue text-neutral-white hover:bg-primary-blue/90',
   secondary: 'border border-primary-blue text-primary-blue hover:bg-primary-blue/10',
+  accent: 'bg-primary-yellow text-primary-blue hover:bg-primary-yellow/90 shadow-[0_10px_30px_rgba(244,208,63,0.35)] ring-1 ring-primary-blue/20',
   ghost: 'text-neutral-dark hover:text-primary-blue',
+  white: 'bg-neutral-white text-primary-blue hover:bg-neutral-light shadow-lg hover:shadow-xl hover:-translate-y-1',
 };
 
 const Button = forwardRef(function Button(

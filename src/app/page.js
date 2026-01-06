@@ -11,15 +11,36 @@ import { galeria, testimonios } from '@/data';
 
 export const dynamic = 'force-static';
 
+export const metadata = {
+  title: 'Inicio | Educación Bilingüe y Cristiana',
+  description: 'Bienvenidos al Gimnasio Simón Bolívar. Formamos líderes con valores cristianos y excelencia académica en Riohacha, La Guajira.',
+};
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Inicio',
+            description: 'Página principal del Gimnasio Simón Bolívar',
+            publisher: {
+              '@type': 'School',
+              name: 'Gimnasio Simón Bolívar',
+            },
+          }),
+        }}
+      />
+
       <Hero />
       <PropuestaValor />
       <ValoresCristianos />
       <AmbienteBilingue />
       <ModeloEducativo />
-      <Testimonios items={testimonios} />
+      {/* <Testimonios items={testimonios} /> */}
       <GaleriaHome items={galeria} />
       <CTA />
     </>

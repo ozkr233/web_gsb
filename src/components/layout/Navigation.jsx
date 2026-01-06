@@ -10,7 +10,7 @@ const navItems = [
   { href: '/', label: 'Inicio' },
   { href: '/nosotros', label: 'Nuestro Colegio' },
   { href: '/bilinguismo', label: 'Programa Bilingüe' },
-  { href: '/galeria', label: 'Galería' },
+
   { href: '/contacto', label: 'Contacto' },
 ];
 

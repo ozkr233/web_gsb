@@ -45,7 +45,7 @@ function Header() {
             <span className={`hidden flex-col leading-tight lg:flex ${titleClasses}`}>
               <span className="font-heading text-lg font-semibold tracking-tight">Gimnasio Simón Bolívar</span>
               <span className={`text-xs uppercase tracking-[0.35em] ${subtitleClasses}`}>
-                Amor · Sabiduría · Paz
+                Educamos hacia un mundo bilingüe
               </span>
             </span>
           </Link>

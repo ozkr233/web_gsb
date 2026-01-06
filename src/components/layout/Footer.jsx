@@ -6,7 +6,7 @@ import Button from '@/components/ui/Button';
 const links = [
   { href: '/nosotros', label: 'Nuestro Colegio' },
   { href: '/bilinguismo', label: 'Programa Bilingüe' },
-  { href: '/galeria', label: 'Galería' },
+
   { href: '/contacto', label: 'Contacto' },
 ];
 
@@ -95,7 +95,7 @@ function Footer() {
 
       <div className="border-t border-neutral-white/20 py-6">
         <p className="mx-auto max-w-7xl px-4 text-xs uppercase tracking-[0.35em] text-neutral-white/60 md:px-6">
-          © {new Date().getFullYear()} Gimnasio Simón Bolívar · Amor · Sabiduría · Paz
+          © {new Date().getFullYear()} Gimnasio Simón Bolívar · Educamos hacia un futuro bilingüe
         </p>
       </div>
     </footer>

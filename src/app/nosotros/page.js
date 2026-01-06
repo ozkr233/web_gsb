@@ -58,7 +58,7 @@ export default function NosotrosPage() {
       />
       {/* Hero Section with Curve */}
       <section className="relative w-full bg-neutral-white pb-20">
-        <div className="relative h-[500px] w-full overflow-hidden">
+        <div className="relative h-[450px] w-full overflow-hidden md:h-auto md:aspect-[3/1]">
           <div className="absolute inset-0 bg-primary-blue/10" />
           <Image
             src="/images/Banners/NUESTRA MAYOR MOTIVACION.jpg"

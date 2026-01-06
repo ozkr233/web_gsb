@@ -59,36 +59,50 @@ function Navigation({ className, orientation = 'horizontal', onNavigate, scheme 
         </button>
         <AnimatePresence>
           {open ? (
-            <motion.ul
-              id="mobile-menu"
-              className="absolute left-0 right-0 top-16 z-40 mx-4 grid gap-4 rounded-3xl bg-neutral-white p-6 shadow-2xl"
-              initial={{ opacity: 0, y: -16 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -12 }}
-            >
-              {navItems.map((item) => {
-                const active = pathname === item.href;
-                return (
-                  <li key={item.href}>
-                    <Link
-                      href={item.href}
-                      onClick={handleNavigate}
-                      className={cn(
-                        'flex items-center justify-between rounded-2xl px-4 py-3 text-lg font-semibold transition',
-                        active
-                          ? 'bg-primary-blue text-neutral-white shadow-card'
-                          : 'text-neutral-dark hover:bg-primary-blue/10',
-                      )}
-                    >
-                      {item.label}
-                      <span className="text-xs uppercase tracking-wide text-primary-blue/60">
-                        {active ? 'Ahora' : 'Ir'}
-                      </span>
-                    </Link>
-                  </li>
-                );
-              })}
-            </motion.ul>
+            <>
+              {/* Backdrop */}
+              <motion.div
+                className="fixed inset-0 top-[80px] z-30 bg-neutral-dark/40 backdrop-blur-sm"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setOpen(false)}
+              />
+              {/* Menu */}
+              <motion.ul
+                id="mobile-menu"
+                className="absolute right-0 top-16 z-40 min-w-[280px] max-w-[calc(100vw-2rem)] origin-top-right gap-2 rounded-3xl bg-neutral-white p-4 shadow-2xl ring-1 ring-neutral-dark/5"
+                initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                transition={{ duration: 0.2 }}
+              >
+                {navItems.map((item) => {
+                  const active = pathname === item.href;
+                  return (
+                    <li key={item.href}>
+                      <Link
+                        href={item.href}
+                        onClick={handleNavigate}
+                        className={cn(
+                          'flex items-center justify-between rounded-2xl px-5 py-4 text-base font-bold transition',
+                          active
+                            ? 'bg-primary-blue text-neutral-white shadow-md'
+                            : 'text-neutral-dark hover:bg-neutral-light',
+                        )}
+                      >
+                        {item.label}
+                        {active && (
+                          <span className="text-[10px] uppercase tracking-wider text-neutral-white/70">
+                            Estás aquí
+                          </span>
+                        )}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </motion.ul>
+            </>
           ) : null}
         </AnimatePresence>
       </nav>

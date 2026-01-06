@@ -13,7 +13,7 @@ const links = [
 function Footer() {
   return (
     <footer className="bg-primary-blue text-neutral-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 md:grid-cols-2 lg:grid-cols-4 md:px-6">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 md:grid-cols-2 md:gap-12 lg:grid-cols-4 md:px-6">
         <div className="space-y-4">
           <h3 className="font-heading text-2xl font-semibold">Gimnasio Simón Bolívar</h3>
           <p className="text-sm text-neutral-white/80">

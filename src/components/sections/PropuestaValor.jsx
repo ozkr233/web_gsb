@@ -7,7 +7,7 @@ function PropuestaValor() {
   return (
     <section className="section-padding bg-neutral-light">
       <div className="mx-auto max-w-5xl px-4 md:px-6">
-        <div className="flex flex-col items-center rounded-[40px] bg-neutral-white p-10 text-center shadow-card md:p-16">
+        <div className="flex flex-col items-center rounded-[40px] bg-neutral-white px-6 py-10 text-center shadow-card md:p-16">
           <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary-blue/10 text-4xl text-primary-blue">
             <FaHandHoldingHeart />
           </div>

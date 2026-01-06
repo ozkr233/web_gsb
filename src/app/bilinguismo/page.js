@@ -86,7 +86,7 @@ export default function BilinguismoPage() {
           <span className="mb-4 rounded-full bg-neutral-white/20 px-4 py-2 text-sm font-bold uppercase tracking-wider backdrop-blur-sm">
             Programa Bilingüe
           </span>
-          <h1 className="font-heading text-5xl font-bold md:text-7xl">English is our passion!</h1>
+          <h1 className="font-heading text-4xl font-bold md:text-7xl">English is our passion!</h1>
           <p className="mt-6 max-w-2xl text-lg text-neutral-white/90 md:text-xl">
             Acompañamos a cada estudiante en un viaje de inmersión lingüística con propósito, cultura y fe.
           </p>

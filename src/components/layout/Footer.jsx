@@ -48,14 +48,6 @@ function Footer() {
             <br />
             Instagram: @gimnasiosimonbolivar
           </p>
-          <a
-            href="/documents/reglamento.pdf"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-primary-yellow hover:text-neutral-white"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Reglamento institucional
-          </a>
         </div>
 
         <div className="space-y-4">

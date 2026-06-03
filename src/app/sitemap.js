@@ -1,5 +1,5 @@
 
-const baseUrl = 'https://gimnasiosimonbolivar.edu';
+const baseUrl = 'https://gimnasiosimonbolivar.edu.co';
 
 export default function sitemap() {
   const pages = ['/', '/nosotros', '/bilinguismo', '/contacto'];

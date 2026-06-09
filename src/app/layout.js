@@ -36,8 +36,12 @@ export const metadata = {
     "educación integral",
   ],
   icons: {
-    icon: "/icon_gsb.png",
-    shortcut: "/icon_gsb.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/logo.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/images/logo.svg",
   },
   openGraph: {
     title: "Gimnasio Simón Bolívar",
@@ -107,7 +111,7 @@ export default function RootLayout({ children }) {
               "@type": "School",
               "name": "Gimnasio Simón Bolívar",
               "url": "https://gimnasiosimonbolivar.edu",
-              "logo": "https://gimnasiosimonbolivar.edu/icon_gsb.png",
+              "logo": "https://gimnasiosimonbolivar.edu/images/Logo.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Calle 9 # 12 – 63",

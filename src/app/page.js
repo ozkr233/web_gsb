@@ -39,9 +39,9 @@ export default function HomePage() {
       <PropuestaValor />
       <ValoresCristianos />
       <AmbienteBilingue />
+      <GaleriaHome items={galeria} />
       <ModeloEducativo />
       {/* <Testimonios items={testimonios} /> */}
-      <GaleriaHome items={galeria} />
       <CTA />
     </>
   );

@@ -11,7 +11,7 @@ function Hero() {
     <section className="relative h-screen min-h-[600px] w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/hero/Estudiantes.jpg"
+        src="/images/hero/Banner_Hero.png"
         alt="Estudiantes del Gimnasio Simón Bolívar"
         fill
         className="object-cover"

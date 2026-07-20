@@ -31,20 +31,46 @@ function FormularioContacto() {
   });
 
   const onSubmit = async (data) => {
-    if (!serviceId || !templateId || !publicKey) {
-      console.warn('Configura las variables de EmailJS en .env.local');
-      setStatus('error');
-      return;
-    }
-
     setStatus('sending');
 
+    if (serviceId && templateId && publicKey) {
+      try {
+        await emailjs.send(serviceId, templateId, data, publicKey);
+        setStatus('success');
+        reset(initialValues);
+        return;
+      } catch (error) {
+        console.error('Error con EmailJS, intentando con FormSubmit:', error);
+      }
+    }
+
     try {
-      await emailjs.send(serviceId, templateId, data, publicKey);
-      setStatus('success');
-      reset(initialValues);
+      const response = await fetch('https://formsubmit.co/ajax/gimnasiosimonbolivar@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          _subject: `Contacto Web GSB de: ${data.nombreAcudiente}`,
+          _template: 'table',
+          Acudiente: data.nombreAcudiente,
+          Correo: data.correo,
+          Teléfono: data.telefono,
+          Estudiante: data.nombreEstudiante,
+          Grado: data.gradoInteres,
+          Mensaje: data.mensaje || 'Sin mensaje adicional',
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        reset(initialValues);
+      } else {
+        throw new Error('FormSubmit respondió con error');
+      }
     } catch (error) {
-      console.error('Error al enviar el formulario', error);
+      console.error('Error al enviar el formulario por ambos métodos', error);
       setStatus('error');
     }
   };
@@ -78,7 +104,7 @@ function FormularioContacto() {
           id="correo"
           type="email"
           className="rounded-2xl border border-neutral-dark/10 px-4 py-3 text-sm shadow-sm focus:border-primary-blue focus:outline-none focus:ring-2 focus:ring-primary-blue/40"
-          placeholder="contacto@ejemplo.com"
+          placeholder="tu@correo.com"
           {...register('correo', {
             required: 'Ingresa un correo electrónico válido.',
             pattern: {
@@ -161,15 +187,29 @@ function FormularioContacto() {
         />
       </div>
 
-      <div className="mt-2 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
-        <Button type="submit" disabled={status === 'sending'}>
-          {status === 'sending' ? 'Enviando...' : 'Enviar solicitud'}
-        </Button>
-        {status === 'success' ? (
-          <p className="text-sm font-semibold text-primary-blue">Gracias por escribirnos. Te contactaremos muy pronto.</p>
-        ) : null}
+      <div className="mt-2 flex flex-col gap-3">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <Button type="submit" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Enviando...' : 'Enviar solicitud'}
+          </Button>
+          {status === 'success' ? (
+            <p className="text-sm font-semibold text-primary-blue">¡Gracias por escribirnos! Hemos recibido tu solicitud y te contactaremos muy pronto.</p>
+          ) : null}
+        </div>
         {status === 'error' ? (
-          <p className="text-sm font-semibold text-primary-red">No pudimos enviar tu mensaje. Inténtalo más tarde.</p>
+          <div className="rounded-2xl bg-primary-red/10 p-4 text-sm text-neutral-dark">
+            <p className="font-semibold text-primary-red">No pudimos enviar el mensaje automáticamente en este momento.</p>
+            <p className="mt-1">
+              Por favor escríbenos directamente a{' '}
+              <a
+                href="mailto:gimnasiosimonbolivar@gmail.com?subject=Contacto%20Página%20Web"
+                className="font-bold underline text-primary-blue hover:text-primary-red"
+              >
+                gimnasiosimonbolivar@gmail.com
+              </a>{' '}
+              o llámanos al <strong>310 653 2932</strong>.
+            </p>
+          </div>
         ) : null}
       </div>
     </form>

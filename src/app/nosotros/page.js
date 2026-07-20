@@ -34,7 +34,7 @@ const iconList = [
   {
     icon: FaEye,
     title: 'Nuestra visión',
-    description: 'en 2027 seremos reconocidos a nivel distrital como una institución de calidad en todos sus procesos, con el cien por ciento de sus egresados con certificación internacional en nivel B2 de inglés.',
+    description: 'Ser una institución reconocida por su excelencia académica y formación en valores, con egresados que dominan el idioma inglés en nivel B2, alcanzan desempeño superior en las Pruebas Saber 11 y, sobre todo, lideran la transformación de la sociedad con principios cristianos firmes.\n\nPromovemos la educación desde una cosmovisión cristiana, formando vidas con propósito y guiando a nuestros estudiantes a ser ciudadanos íntegros que impactan su entorno con excelencia, justicia y una convivencia pacífica.',
   },
 ];
 
@@ -126,7 +126,7 @@ export default function NosotrosPage() {
                 </div>
                 <div className="space-y-2 border-b border-neutral-dark/10 pb-8 md:border-none md:pb-0">
                   <h3 className="font-heading text-xl font-bold text-primary-blue">{item.title}</h3>
-                  <p className="text-neutral-dark/80">{item.description}</p>
+                  <p className="text-neutral-dark/80 whitespace-pre-line leading-relaxed">{item.description}</p>
                 </div>
               </div>
             ))}

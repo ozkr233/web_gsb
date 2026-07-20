@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { FaComments, FaPlane, FaGlobeAmericas, FaBookReader } from 'react-icons/fa';
+import { FaComments, FaPlane, FaGlobeAmericas } from 'react-icons/fa';
 
 const pilares = [
   {
@@ -11,17 +11,12 @@ const pilares = [
   {
     icon: FaPlane,
     title: 'Intercambio con Alemania',
-    detail: 'Desde 2012 recibimos voluntarios del programa BMZ y nuestros estudiantes pueden vivir un año académico en Europa.'
+    detail: 'Desde 2012 recibimos voluntarios del programa BMZ.'
   },
   {
     icon: FaGlobeAmericas,
     title: 'Certificación internacional',
     detail: 'Alianzas con YES, I DO y programas Cambridge aseguran alcanzar el nivel B2 antes de graduarse.'
-  },
-  {
-    icon: FaBookReader,
-    title: 'Clases de alemán',
-    detail: 'Ofrecemos talleres optativos dictados por hablantes nativos que amplían la visión multicultural.'
   }
 ];
 
@@ -51,8 +46,8 @@ function AmbienteBilingue() {
             </p>
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">
-            {pilares.map((pilar) => (
-              <li key={pilar.title} className="flex flex-col gap-4 rounded-3xl bg-neutral-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            {pilares.map((pilar, index) => (
+              <li key={pilar.title} className={`flex flex-col gap-4 rounded-3xl bg-neutral-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${index === 2 ? 'sm:col-span-2' : ''}`}>
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary-blue/10 text-primary-blue">
                   <pilar.icon className="h-6 w-6" aria-hidden />
                 </span>

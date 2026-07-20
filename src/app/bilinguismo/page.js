@@ -204,31 +204,6 @@ export default function BilinguismoPage() {
           </div>
         </div>
       </section>
-
-      {/* Beca GSB Section */}
-      <section className="section-padding bg-neutral-gray">
-        <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
-          <h2 className="section-heading mb-8">Beca GSB Alemania</h2>
-          <div className="mb-10 overflow-hidden rounded-3xl shadow-card transition hover:shadow-2xl">
-            <Image
-              src="/images/Banners/REQUISITOS PARA BECA GSB ALEMANIA.jpg"
-              alt="Requisitos para Beca GSB Alemania"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="h-auto w-full"
-            />
-          </div>
-          <a
-            href="https://forms.office.com/pages/responsepage.aspx?id=1zdjf0U630aNoMu4efDs09WLsQRKjgdKveKYpRLHYiNURVRXN1gwNUFJRUdXVTkwMTA4MjEyRlNDRi4u&origin=lprLink&route=shorturl"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-primary-red px-8 py-4 text-lg font-bold text-neutral-white shadow-lg transition hover:bg-primary-red/90 hover:scale-105"
-          >
-            Aplicar a la Beca
-          </a>
-        </div>
-      </section>
     </div>
   );
 }

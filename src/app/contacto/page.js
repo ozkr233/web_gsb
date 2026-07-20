@@ -24,7 +24,7 @@ const medios = [
   {
     icon: FaEnvelope,
     title: 'Correo electrónico',
-    detail: 'contacto@gimbolivar.edu.co',
+    detail: 'gimnasiosimonbolivar@gmail.com',
     subdetail: 'Respuesta en 24 horas'
   },
 ];
@@ -54,7 +54,7 @@ export default function ContactoPage() {
               '@type': 'School',
               name: 'Gimnasio Simón Bolívar',
               telephone: '+57-310-653-2932',
-              email: 'contacto@gimbolivar.edu.co',
+              email: 'gimnasiosimonbolivar@gmail.com',
             },
           }),
         }}

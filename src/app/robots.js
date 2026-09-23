@@ -1,6 +1,6 @@
+import { SITE_URL } from '@/lib/seo';
 
 export default function robots() {
-  const baseUrl = 'https://gimnasiosimonbolivar.edu';
   return {
     rules: [
       {
@@ -8,6 +8,6 @@ export default function robots() {
         allow: '/',
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
+    sitemap: `${SITE_URL}/sitemap.xml`,
   };
 }

@@ -11,6 +11,7 @@ import {
   FaStar,
   FaClock
 } from 'react-icons/fa';
+import { SCHOOL_ID, SITE_URL, pageMetadata } from '@/lib/seo';
 
 const metodologias = [
   {
@@ -47,11 +48,12 @@ const horarios = [
   { bloque: 'Bachillerato', horas: '80% de la jornada', enfoque: 'AP English, talleres universitarios y preparación C1.' },
 ];
 
-export const metadata = {
-  title: 'Programa Bilingüe',
-  description: 'Descubre la metodología, certificaciones y resultados del programa bilingüe del Gimnasio Simón Bolívar.',
-  alternates: { canonical: 'https://gimnasiosimonbolivar.edu/bilinguismo' },
-};
+export const metadata = pageMetadata({
+  title: 'Programa bilingüe en Riohacha',
+  description:
+    'Programa bilingüe del Gimnasio Simón Bolívar en Riohacha, La Guajira: metodología, certificaciones Cambridge, actividades en inglés e intercambios internacionales.',
+  path: '/bilinguismo',
+});
 
 export default function BilinguismoPage() {
   return (
@@ -64,10 +66,8 @@ export default function BilinguismoPage() {
             '@type': 'EducationalOccupationalProgram',
             name: 'Programa Bilingüe',
             description: 'Programa de inmersión en inglés con certificación Cambridge.',
-            provider: {
-              '@type': 'School',
-              name: 'Gimnasio Simón Bolívar',
-            },
+            url: `${SITE_URL}/bilinguismo`,
+            provider: { '@id': SCHOOL_ID },
             educationalCredentialAwarded: 'Certificación B2/C1',
           }),
         }}

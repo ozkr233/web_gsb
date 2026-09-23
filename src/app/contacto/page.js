@@ -1,12 +1,14 @@
 import Image from 'next/image';
 import FormularioContacto from '@/components/ui/FormularioContacto';
 import { FaFacebookF, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { SCHOOL_ID, SITE_URL, pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Contacto',
-  description: 'Comunícate con el Gimnasio Simón Bolívar en Riohacha. Agenda visitas guiadas y recibe acompañamiento personalizado.',
-  alternates: { canonical: 'https://gimnasiosimonbolivar.edu/contacto' },
-};
+export const metadata = pageMetadata({
+  title: 'Contacto y admisiones en Riohacha',
+  description:
+    'Visítanos en la Calle 9 # 12-63, Centro, Riohacha, La Guajira. Llámanos al 310 653 2932 o escríbenos para admisiones y visitas guiadas.',
+  path: '/contacto',
+});
 
 const medios = [
   {
@@ -45,17 +47,11 @@ export default function ContactoPage() {
             '@context': 'https://schema.org',
             '@type': 'ContactPage',
             name: 'Contacto',
-            description: 'Canales de atención del Gimnasio Simón Bolívar.',
-            publisher: {
-              '@type': 'School',
-              name: 'Gimnasio Simón Bolívar',
-            },
-            mainEntity: {
-              '@type': 'School',
-              name: 'Gimnasio Simón Bolívar',
-              telephone: '+57-310-653-2932',
-              email: 'gimnasiosimonbolivar@gmail.com',
-            },
+            description: 'Canales de atención del Gimnasio Simón Bolívar en Riohacha, La Guajira.',
+            url: `${SITE_URL}/contacto`,
+            inLanguage: 'es-CO',
+            publisher: { '@id': SCHOOL_ID },
+            mainEntity: { '@id': SCHOOL_ID },
           }),
         }}
       />

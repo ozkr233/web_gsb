@@ -48,7 +48,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          Formamos líderes con pensamiento global, corazón cristiano y vocación de servicio. Una comunidad educativa que inspira confianza en cada etapa escolar.
+          Colegio bilingüe en Riohacha, La Guajira. Formamos líderes con pensamiento global, corazón cristiano y vocación de servicio. Una comunidad educativa que inspira confianza en cada etapa escolar.
         </motion.p>
 
         <motion.div

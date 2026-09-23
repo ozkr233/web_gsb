@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { FaSchool, FaHeart, FaBullseye, FaEye, FaQuoteLeft } from 'react-icons/fa';
+import { SCHOOL_ID, SITE_URL, pageMetadata } from '@/lib/seo';
 
-export const metadata = {
-  title: 'Nosotros',
+export const metadata = pageMetadata({
+  title: 'Nuestro colegio en Riohacha desde 1973',
   description:
-    'Conoce la historia, misión, filosofía y servicios educativos del Gimnasio Simón Bolívar en Riohacha: Amor, Sabiduría y Paz en cada etapa escolar.',
-  alternates: { canonical: 'https://gimnasiosimonbolivar.edu/nosotros' },
-};
+    'Conoce la historia del Gimnasio Simón Bolívar, colegio cristiano en Riohacha, La Guajira, fundado en 1973: misión, visión, valores y resoluciones oficiales.',
+  path: '/nosotros',
+});
 
 const resoluciones = [
   'Resoluciones 303 del 29 de diciembre de 1999',
@@ -48,11 +49,11 @@ export default function NosotrosPage() {
             '@context': 'https://schema.org',
             '@type': 'AboutPage',
             name: 'Nosotros',
-            description: 'Historia, misión y visión del Gimnasio Simón Bolívar.',
-            publisher: {
-              '@type': 'School',
-              name: 'Gimnasio Simón Bolívar',
-            },
+            description: 'Historia, misión y visión del Gimnasio Simón Bolívar, colegio en Riohacha, La Guajira.',
+            url: `${SITE_URL}/nosotros`,
+            inLanguage: 'es-CO',
+            about: { '@id': SCHOOL_ID },
+            publisher: { '@id': SCHOOL_ID },
           }),
         }}
       />

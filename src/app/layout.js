@@ -4,6 +4,14 @@ import { Manrope, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  SITE_NAME,
+  SITE_URL,
+  schoolJsonLd,
+  socialMetadata,
+} from "@/lib/seo";
 
 const manrope = Manrope({
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -20,22 +28,28 @@ const poppins = Poppins({
 });
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GOOGLE_SITE_VERIFICATION = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
 
+// No canonical here: each page sets its own so the 404 page doesn't point at the home page.
 export const metadata = {
-  metadataBase: new URL("https://gimnasiosimonbolivar.edu"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Gimnasio Simón Bolívar",
-    template: "%s | Gimnasio Simón Bolívar",
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "Colegio cristiano bilingüe en Riohacha. Amor, Sabiduría y Paz con excelencia académica e intercambios internacionales.",
+  description: DEFAULT_DESCRIPTION,
+  ...socialMetadata({ title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION }),
+  applicationName: SITE_NAME,
   keywords: [
-    "colegio bilingüe",
-    "educación cristiana",
-    "Gimnasio Simón Bolívar",
     "colegio en Riohacha",
-    "educación integral",
+    "colegios en Riohacha",
+    "colegio bilingüe Riohacha",
+    "colegios La Guajira",
+    "colegio cristiano Riohacha",
+    "bachillerato Riohacha",
+    "Gimnasio Simón Bolívar",
   ],
+  ...(GOOGLE_SITE_VERIFICATION ? { verification: { google: GOOGLE_SITE_VERIFICATION } } : {}),
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -43,33 +57,6 @@ export const metadata = {
     ],
     shortcut: "/favicon.ico",
     apple: "/images/logo.svg",
-  },
-  openGraph: {
-    title: "Gimnasio Simón Bolívar",
-    description:
-      "Formamos líderes bilingües con valores cristianos, intercambio internacional y excelencia académica.",
-    url: "https://gimnasiosimonbolivar.edu",
-    siteName: "Gimnasio Simón Bolívar",
-    images: [
-      {
-        url: "/images/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "Estudiantes del Gimnasio Simón Bolívar",
-      },
-    ],
-    locale: "es_CO",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Gimnasio Simón Bolívar",
-    description:
-      "Formamos líderes bilingües con valores cristianos, intercambio internacional y excelencia académica.",
-    images: ["/images/og-image.svg"],
-  },
-  alternates: {
-    canonical: "https://gimnasiosimonbolivar.edu",
   },
 };
 
@@ -106,34 +93,10 @@ export default function RootLayout({ children }) {
             </Script>
           </>
         ) : null}
-        <Script id="ld-json" strategy="afterInteractive" type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "School",
-              "name": "Gimnasio Simón Bolívar",
-              "url": "https://gimnasiosimonbolivar.edu",
-              "logo": "https://gimnasiosimonbolivar.edu/images/Logo.png",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Calle 9 # 12 – 63",
-                "addressLocality": "Riohacha",
-                "addressRegion": "La Guajira",
-                "postalCode": "440001",
-                "addressCountry": "CO"
-              },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+57-310-653-2932",
-                "contactType": "admissions"
-              },
-              "sameAs": [
-                "https://www.facebook.com/gimnasiosimonbolivar",
-                "https://www.instagram.com/gimnasiosimonbolivar"
-              ]
-            }
-          `}
-        </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolJsonLd) }}
+        />
       </body>
     </html>
   );

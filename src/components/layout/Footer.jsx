@@ -17,7 +17,7 @@ function Footer() {
         <div className="space-y-4">
           <h3 className="font-heading text-2xl font-semibold">Gimnasio Simón Bolívar</h3>
           <p className="text-sm text-neutral-white/80">
-            Amor, Sabiduría y Paz al servicio de Riohacha desde 1973. Educación básica secundaria y media (bachillerato) con enfoque cristiano y bilingüe.
+            Amor, Sabiduría y Paz al servicio de Riohacha, La Guajira, desde 1973. Colegio de educación básica secundaria y media (bachillerato) con enfoque cristiano y bilingüe.
           </p>
           <Button href="/contacto" variant="secondary" className="transition hover:-translate-y-1">
             Agendar visita
@@ -40,7 +40,7 @@ function Footer() {
         <div className="space-y-4">
           <h4 className="text-lg font-semibold">Datos institucionales</h4>
           <p className="text-sm text-neutral-white/80">
-            Dirección: Calle 9 # 12 – 63 · Riohacha
+            Dirección: Calle 9 # 12 – 63, Centro · Riohacha, La Guajira
             <br />
             Teléfono: 310 653 2932
             <br />

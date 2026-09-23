@@ -1,4 +1,5 @@
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import { Manrope, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -88,6 +89,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <Analytics />
         {GA_ID ? (
           <>
             <Script
